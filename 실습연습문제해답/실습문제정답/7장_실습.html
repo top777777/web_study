@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex를 이용한 반응형 실습 문제 </title>
+    <style>
+ 
+        .listbox {
+            display: flex;
+            max-width: 950px;
+            flex-direction:        ;
+            justify-content:          ;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 0 30px #ccc;
+        }
+        .boxitem {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .boxitem+.boxitem {
+            border-top: 1px solid #ccc;
+        }
+        .box-reverse {
+            flex-direction:       ;
+        }
+        .imgpart img {
+            width: 450px;
+        }
+        .txtbox {
+            padding: 0 20px;
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">회사로고 </div>
+            <ul>
+                <li><a href="#">메뉴 1</a></li>
+                <li><a href="#"> 메뉴 2</a></li>
+                <li><a href="#">메뉴 3</a></li>
+                <li><a href="#">메뉴 4</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <div class="listbox">
+        <div class="boxitem">
+            <div class="imgpart">
+                <img src="images/plouzane-1758197_640.jpg" alt="">
+            </div>
+            <div class="txtbox">
+                <p>외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다. 제1항의 지시를 받은 당해 행정기관은 이에 응하여야 한다. 대통령·국무총리·국무위원·행정각부의 장·헌법재판소
+                    재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
+
+                <p>헌법개정안이 제2항의 찬성을 얻은 때에는 헌법개정은 확정되며, 대통령은 즉시 이를 공포하여야 한다. 형사피의자 또는 형사피고인으로서 구금되었던 자가 법률이 정하는 불기소처분을
+                    받거나 무죄판결을 받은때에는 법률이 정하는 바에 의하여 국가에 정당한 보상을 청구할 수 있다.</p>
+
+
+            </div>
+        </div>
+        <div class="boxitem box-reverse">
+            <div class="imgpart">
+                <img src="images/staircase-274614_640.jpg" alt="">
+            </div>
+            <div class="txtbox">
+                <p>국회는 법률에 저촉되지 아니하는 범위안에서 의사와 내부규율에 관한 규칙을 제정할 수 있다. 형사피의자 또는 형사피고인으로서 구금되었던 자가 법률이 정하는 불기소처분을 받거나
+                    무죄판결을 받은 때에는 법률이 정하는 바에 의하여 국가에 정당한 보상을 청구할 수 있다.</p>
+
+                <p>감사원은 원장을 포함한 5인 이상 11인 이하의 감사위원으로 구성한다. 군인은 현역을 면한 후가 아니면 국무위원으로 임명될 수 없다. 대통령은 조약을 체결·비준하고, 외교사절을
+                    신임·접수 또는 파견하며, 선전포고와 강화를 한다.</p>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

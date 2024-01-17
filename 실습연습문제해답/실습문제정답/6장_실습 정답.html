@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex : justify-content </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            display: flex;
+            background-color: #2c2c2c;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        nav {
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 2em;
+            padding-top: 10px;
+            color: white;
+        }
+        
+        .logo:hover {
+            animation: logoani 1s infinite;
+            cursor: pointer;
+        }
+        
+        @keyframes logoani {
+            0% {
+                color: red;
+            }
+            25% {
+                color: yellow;
+            }
+            50% {
+                color: skyblue;
+            }
+            75% {
+                color: tomato;
+            }
+            100% {
+                color: red;
+            }
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        li {
+            color: #fff;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        
+        li a {
+            padding: 8px 25px;
+            text-decoration: none;
+            color: #fff;
+            transition: linear 0.15s;
+            border: 1px solid transparent;
+            margin: 0 10px;
+        }
+        
+        li a:hover {
+            border: 1px solid #fff;
+            border-radius: 20px;
+            background: linear-gradient(to bottom, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
+            color: #000;
+            text-shadow: 0 1px 1px #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">회사로고 </div>
+        <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#"> 메뉴 2</a></li>
+            <li><a href="#">메뉴 3</a></li>
+            <li><a href="#">메뉴 4</a></li>
+        </ul>
+
+    </nav>
+
+</body>
+
+</html>

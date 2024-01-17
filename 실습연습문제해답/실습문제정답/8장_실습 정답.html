@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>반복문</title>
+    <style>
+        ul {
+            list-style: none;
+            margin-left: -20px;
+        }
+
+        ul li {
+            font-size: 1.25rem;
+            display: inline-block;
+            padding:2px 5px;
+        }
+
+        ul li:after {
+            content: " /";
+        }
+
+        ul li:last-child:after {
+            content: " ";
+        }
+    </style>
+</head>
+
+<body>
+    <h3>10씩 증가하는 값</h3>
+    <ul id="list"></ul>
+
+
+
+    <script>
+        var text = "";
+        for (var count = 10; count < 51; count += 10) {
+            text += "<li> " + count + "</li>";
+        }
+        document.getElementById("list").innerHTML = text;
+    </script>
+</body>
+
+</html>
