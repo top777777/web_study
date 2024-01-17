@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko-kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>localStorage Demo</title>
+</head>
+<style>
+    body {
+        width: 700px;
+        margin: 150px auto;
+        font-family: '맑은 고딕' sans-serif;
+        font-size: 0.75em;
+        background-color: #e8e8e8;
+    }
+
+    h1 {
+        font-size: 4em
+    }
+
+    textarea {
+        font-size: 12px;
+        line-height: 130%;
+        margin-top: 7px;
+        width: 700px;
+        height: 200px;
+        padding: 10px;
+        rows: 15;
+        cols: 80;
+    }
+</style>
+
+<body>
+    <h1>localStorage Demo</h1>
+    <span id="idCaveat"></span>
+    <textarea id="idTextarea"></textarea>
+    <p>로컬 스토리지를 사용한 예제입니다.
+        <br>이곳에 텍스트가 입력되면, 브라우저를 새로고침하거나, 브라우저를 끄고 켜도 텍스트는 남게 됩니다.</p>
+    글자 수 :
+    <span id="idCharCount"></span>
+    <script>
+        function savetext() {
+            var s = document.getElementById("idTextarea").value;
+            if (s != localStorage.savedtext) {
+                localStorage.savedtext = s;
+            }
+            document.getElementById("idCharCount").innerHTML = s.length;
+        }
+
+        function startup() {
+            if (typeof (Storage) == undefined) {
+                document.getElementById("idCaveat").innerHTML = "현재 사용하고 계시는 브라우저에서는 로컬 스토리지 기능을 사용할 수 없습니다.";
+            } else {
+                if (localStorage.savedtext == undefined) {
+                    localStorage.savedtext = "";
+                }
+                document.getElementById("idTextarea").value = localStorage.savedtext;
+                self.setInterval(function () {
+                    savetext()
+                }, 1000); //call every second
+            }
+        }
+        startup();
+
+
+
+    </script>
+</body>
+
+</html>

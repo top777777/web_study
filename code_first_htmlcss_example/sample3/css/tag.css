@@ -1,0 +1,36 @@
+header {
+  height: 70px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+header h1 {
+  float: left;
+  font-size: 1.8rem;
+}
+header ul {
+  float: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+article {
+  min-height: 500px;
+}
+article section {
+  float: left;
+}
+article aside {
+  float: right;
+  width: 200px;
+  background-color: #c0dce7;
+  min-height: 500px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+footer {
+  height: 10px;
+  background-color: #fedd31;
+  padding: 20px;
+  text-align: center;
+}

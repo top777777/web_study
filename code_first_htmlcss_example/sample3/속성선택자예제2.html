@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>속성선택자 예제 2 </title>
+    <style>
+        form label {
+            /* form label 이라고 하위 선택자 적용했고, 속성을 적용했습니다. */
+            display: inline-block;
+            width: 100px;
+        }
+
+        input[type^="t"],
+        textarea {
+        /* input type이 t로 시작되는 부분과 textarea에만 효과를 적용했습니다. */
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        label[for^="co"] {
+        /* label에 있는 for 속성중 co로 시작되는 부분에만 효과 적용 . */
+            position: relative;
+            top: -90px;
+        }
+
+        input[type^="b"] {
+        /* input에서 type이 b로 시작되는 부분 즉 버튼 부분에만 효과를 적용했습니다.  */
+            padding: 10px 20px;
+            border: 1px solid #bc3636;
+            background-color: #bc0202;
+            color: #fff;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <p>
+            <label for="name">이름</label>
+            <input type="text">
+        </p>
+        <p>
+            <label for="email">이메일주소 </label>
+            <input type="text">
+        </p>
+        <p>
+            <label for="content">내용</label>
+            <textarea name="content" id="content" rows="10"></textarea>
+            <p>
+                <label for="submit"></label>
+                <input type="button" value=" 전송하기 ">
+            </p>
+        </p>
+    </form>
+</body>
+
+</html>

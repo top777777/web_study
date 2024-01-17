@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG 테스트 </title>
+    <style type="text/css">
+    	.box {
+    		width: 250px;
+    		height: 250px;
+    		display: inline-block;
+			text-align: center;
+    	}
+    </style>
+</head>
+<body>
+	<div class="box"><embed src="./images/penguin.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /><br>embed 방식</div>
+
+	<div class="box"><object data="./images/penguin.svg" type="image/svg+xml"></object><br>object 방식</div>
+
+	<div class="box"><img src="./images/penguin.svg" alt=""><br>img 방식</div>
+
+	<div class="box"><iframe src="./images/penguin.svg"></iframe> <br> iframe 방식 </div>
+
+
+
+</body>
+</html>

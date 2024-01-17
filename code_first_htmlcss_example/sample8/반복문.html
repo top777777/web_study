@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>반복문</title>
+</head>
+
+<body>
+    <h3>while 문 </h3>
+    <ul id="list"></ul>
+
+    <h3>for문 </h3>
+    <ul id="list1"></ul>
+
+    <h3>for문 이용한 배열 처리 </h3>
+    <ul id="list2"></ul>
+
+    <script>
+        var text = "";
+        var count = 1;
+        while (count < 10) {
+            text += "<li> 여기는 숫자  " + count + "</li>";
+            count++;
+        }
+        document.getElementById("list").innerHTML = text;
+        var text1 = "";
+        for (var count = 1; count < 6; count++) {
+            text1 += "<li> 여기는 숫자  " + count + "</li>";
+        }
+        document.getElementById("list1").innerHTML = text1;
+        var text2 = "";
+        var phones = ['iPhoneX', 'Galaxy S9', 'LG G7'];
+        for (var i = 0; i < phones.length; i++) {
+            text2 += "<li>" + phones[i] + "</li>";
+        }
+        document.getElementById("list2").innerHTML = text2;
+
+
+
+    </script>
+</body>
+
+</html>

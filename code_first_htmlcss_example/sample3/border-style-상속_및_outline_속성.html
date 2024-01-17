@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border style 상속 및 outline 속성 </title>
+    <style>
+        .box1,
+        .box2 {
+            width: 200px;
+            height: 50px;
+            margin: 50px;
+            padding: 10px;
+        }
+
+        .box1 {
+            border: 1px solid #666;
+            border-bottom: 2px dotted #F00;
+        }
+
+        .box2 {
+            border: 5px solid red;
+            outline: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        여기는 박스 1
+    </div>
+    <div class="box2">
+        여기는 박스 2
+    </div>
+</body>
+
+</html>

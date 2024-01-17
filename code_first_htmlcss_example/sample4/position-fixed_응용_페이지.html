@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position:fixed 응용페이지</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            height: 70px;
+            position: fixed;
+            width: 100%;
+            background-color: skyblue;
+            padding-top: 25px;
+            text-align: center;
+            box-sizing: border-box;
+            z-index: 100;
+        }
+
+        article {
+            padding: 80px 20px;
+            line-height: 1.5rem
+        }
+
+        footer {
+            bottom: 0;
+            background-color: pink;
+        }
+
+        img.pic1 {
+            width: 50%;
+            max-width: 350px;
+            height: auto;
+            float: left;
+            margin: 5px 15px 5px 0;
+        }
+
+        .divbox {
+            width: 250px;
+            height: 150px;
+            border: 1px solid red;
+            position: absolute;
+            right: 30px;
+            top: 150px;
+            z-index: 10;
+            background-color: red;
+            opacity: 0.9;
+            color: white;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .divbox .close {
+            float: right;
+            margin: 5px;
+        }
+
+        .divbox .close:hover {
+            cursor: pointer;
+        }
+
+        .divbox p {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>여기는 헤더 부분</header>
+    <article>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac sapien sit amet est ultrices imperdiet. Sed in
+            quam tristique, dapibus ipsum id, porttitor ex. Nullam aliquet blandit dui a sagittis. Sed at interdum lorem.
+            Curabitur iaculis lorem in tincidunt lacinia. Nulla quis scelerisque tortor, auctor lobortis mauris. Maecenas
+            dignissim turpis vel quam mattis pharetra. Ut vulputate non libero sit amet pulvinar. Aenean varius nunc libero,
+            quis facilisis dolor gravida ut. Proin eu lacinia massa.</p>
+
+        <p>massa. Sed vitae mauris in lorem pellentesque posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            eget dui pulvinar, volutpat augue id, pulvinar justo. In id justo vel sem vulputate blandit eu eget leo. Phasellus
+            purus arcu, tincidunt vel lectus eu, tristique sagittis nunc. Maecenas ipsum sem, ultrices eu nibh maximus, eleifend
+            hendrerit orci. Quisque congue suscipit massa at aliquet.</p>
+
+        <img src="https://cdn.pixabay.com/photo/2017/10/01/16/25/aircraft-2806035__480.jpg" alt="비행기" class="pic1">
+
+        <p>Donec dolor ipsum, porta in turpis nec, dictum dapibus tellus. Curabitur cursus sem ac congue auctor. Aliquam et
+            maximus tortor. Aenean mollis mauris euismod, varius lorem a, rhoncus dui. Aenean suscipit ex neque, vitae commodo
+            magna convallis vel. Sed arcu tellus, convallis a mauris quis, cursus porta purus. Fusce eu sem libero. Proin
+            fermentum ut arcu vitae sagittis. Etiam nec imperdiet urna. Donec cursus nisl id neque semper ultrices. Nam congue,
+            tellus elementum fermentum imperdiet, nisi turpis consectetur augue, sit amet molestie elit elit id quam. Integer
+            lorem nulla, auctor sit amet erat in, dictum laoreet neque. Aenean cursus, lacus id consectetur lobortis, metus
+            libero facilisis nulla, at tincidunt tellus mi id lorem. Nullam sit amet pharetra leo. Mauris finibus ac dolor
+            ac luctus.</p>
+
+        <p>Mauris tincidunt gravida dapibus. Morbi lobortis pellentesque mi pulvinar viverra. Phasellus feugiat sem risus, et
+            ornare leo feugiat ac. Curabitur tempus quis ligula ut congue. Mauris quis sem dui. Proin tempor imperdiet lectus,
+            vel eleifend metus efficitur sed. Morbi lectus lorem, consequat in auctor quis, aliquam nec dolor. Curabitur
+            vulputate laoreet malesuada. Ut in efficitur enim. Aenean mattis pharetra nisl quis tincidunt. Mauris sed velit
+            magna. Sed convallis nisl iaculis turpis sodales elementum.</p>
+
+        <p>Maecenas eu libero id enim commodo pellentesque. Aliquam pulvinar aliquam hendrerit. Proin dapibus, ipsum id vulputate
+            varius, augue nibh dapibus quam, eget posuere quam magna sit amet neque. Quisque sed metus est. Pellentesque
+            eu nibh dapibus, rutrum ipsum a, porta odio. Nulla eleifend metus ex, non luctus nisi pulvinar ac. Vivamus id
+            nulla non nisi feugiat facilisis at a felis.</p>
+    </article>
+    <footer>여기는 푸터 </footer>
+    <div class="divbox">
+        <div class="close">x</div>
+        <p>여기는 플로팅 박스 </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(".close").on("click", function () {
+            $(".divbox").fadeOut();
+        })
+    </script>
+</body>
+
+</html>

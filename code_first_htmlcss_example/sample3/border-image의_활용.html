@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border-image 의 활용 </title>
+    <style>
+        .borderbox,
+        .borderbox-stretch,
+        .borderbox2,
+        .borderbox-stretch2 {
+            width: 400px;
+            height: 80px;
+            border: 30px solid transparent;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .borderbox {
+            border-image: url(images/images.png) 35 round;
+        }
+
+        .borderbox-stretch {
+            border-image: url(images/images.png) 35 stretch;
+        }
+
+        .borderbox2 {
+            border-image: url(images/border-images.png) 35 round;
+        }
+
+        .borderbox-stretch2 {
+            border-image: url(images/border-images.png) 35 stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="borderbox">
+        border 이미지가 복잡한 경우 round
+    </div>
+    <div class="borderbox-stretch">
+        border 이미지가 복잡한 경우 stetch
+    </div>
+
+    <div class="borderbox2">
+        border-image가 단순한 경우 round
+    </div>
+    <div class="borderbox-stretch2">
+        border-image가 단순한 경우 stretch
+    </div>
+</body>
+
+</html>

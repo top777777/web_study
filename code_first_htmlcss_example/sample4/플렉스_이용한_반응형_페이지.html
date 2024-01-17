@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex를 이용한 반응형 페이지 </title>
+    <style>
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .fbox {
+            flex: 1 1 350px;
+            margin: 5px;
+        }
+
+        .fbox img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="fbox">
+            <img src="https://cdn.pixabay.com/photo/2016/08/17/18/15/tabletop-photography-1601184__340.jpg" alt="">
+        </div>
+        <div class="fbox">
+            <img src="https://cdn.pixabay.com/photo/2017/01/03/16/54/klee-1949981__340.jpg" alt="">
+        </div>
+        <div class="fbox">
+            <img src="https://cdn.pixabay.com/photo/2015/01/15/16/17/hands-600497__340.jpg" alt="">
+        </div>
+        <div class="fbox">
+            <img src="https://cdn.pixabay.com/photo/2016/01/13/21/24/architecture-1138967__340.jpg" alt="">
+        </div>
+        <div class="fbox">
+            <img src="https://cdn.pixabay.com/photo/2015/01/08/15/54/lines-593191__340.jpg" alt="">
+        </div>
+        <div class="fbox">
+            <img src="https://cdn.pixabay.com/photo/2017/10/30/13/37/autumn-2902546__340.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>

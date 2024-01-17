@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>padding 값에 따른 박스 크기 변화 </title>
+    <style>
+        .box1,
+        .box2 {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .box1 {
+            padding: 10px;
+        }
+
+        .box2 {
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> 박스 둘은 width와 height의 값은 동일</h2>
+    <div class="box1">여기는 박스 1</div>
+    <div class="box2">여기는 박스 2</div>
+</body>
+
+</html>

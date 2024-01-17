@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex를 이용한 로그인 페이지 </title>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+        }
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #eee;
+        }
+
+        .formfield {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px #ccc;
+            background-color: #fff;
+            height: 250px;
+            width: 300px;
+        }
+
+        .formfield h2 {
+            font-size: 1.6em;
+            padding-bottom: 0.5em;
+            margin-bottom: 0.7em;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .formfield input,
+        .formfield button {
+            display: block;
+            margin: 10px auto;
+            padding: 0.7em;
+            font-size: 0.85em;
+            width: 60%;
+        }
+
+        .formfield button {
+            width: 68%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formfield">
+            <h2>회원 로그인 </h2>
+            <form action="">
+                <input type="text" placeholder="아이디">
+                <input type="passwword" placeholder="패스워드">
+                <button>확인</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

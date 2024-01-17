@@ -1,0 +1,100 @@
+* {
+     /* 전체선택자를 이용 모든 선택자의 margin 과 padding 값을 0으로 설정 */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+}
+
+header,
+footer {
+     /* header와 footer를 그룹으로 묶어서 동일한 속성 적용 */
+    height: 70px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+header h1 {
+     /* 하위 선택자를 이용하여 header에 있는 h1에 대한 부분 설정 */
+    float: left;
+    font-size: 1.8rem;
+}
+
+header ul {
+     /* 하위 선택자 이용해서 값 설정 */
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+header ul li {
+     /* 하위 선택자 즉 header 에 있는 ul 밑에 있는 li 값 여기서 하위 선택자인 경우 header li 만 해도 됨. */
+    display: inline-block;
+}
+
+header ul li a {
+     /* 하위 선택자 이용 이 부분도 header li a 만 처리해도 무방함 */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+article {
+     /* 태그 선택자 이용 */
+    min-height: 500px;
+    background-color: #fff;
+}
+
+article section {
+    /*  하위 선택자 이용 */
+    float: left;
+    padding: 20px;
+}
+
+article aside {
+    /*  하위 선택자 이용 */
+    float: right;
+    width: 200px;
+    background-color: #c0dce7;
+    min-height: 500px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+section h2,
+aside h2 {
+    /*  그룹 선택자 이용하여 값 설정 */
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+section ul,
+aside ul {
+    /*  그룹 선택자 이용 */
+    padding: 10px 20px;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+h1.logo {
+    /*  종속 선택자를 이용하여 로고에 대한 값을 처리함. 이부분은 그냥 클래스 선태자 .logo 만 해도 무방함. */
+    background: url("../images/delion.png") no-repeat center left;
+    background-size: cover;
+    text-indent: -9999px;
+    height: 40px;
+    width: 147px;
+    margin-left: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text-indent를 이용한 예제</title>
+    <style>
+        p {
+            text-indent: 1.5em;
+            width: 200px;
+        }
+
+        .box1,
+        box2 {
+            display: table;
+        }
+
+        ul.menu1,
+        ul.menu2 {
+            list-style: none;
+            display: block;
+        }
+
+        ul.menu1 li,
+        ul.menu2 li {
+            float: left;
+            width: 80px;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 0.5em 1.5em;
+            border-right: none;
+        }
+
+        ul.menu1 li a,
+        ul.menu2 li a {
+            text-decoration: none;
+            border-right: none;
+        }
+
+        ul.menu1 li:last-child,
+        ul.menu2 li:last-child {
+            border-right: 1px solid #ccc;
+        }
+
+        ul.menu2 li a {
+            background: no-repeat center center;
+            background-size: 20px 20px;
+            display: block;
+            text-indent: -9999px;
+        }
+
+        ul.menu2 li:first-child a {
+            background-image: url("http://css3.zerois.net/sampleimgs/icons8-airport-50.png");
+        }
+
+        ul.menu2 li:nth-child(2) a {
+            background-image: url("http://css3.zerois.net/sampleimgs/icons8-paper-plane-50.png");
+        }
+
+        ul.menu2 li:last-child a {
+            background-image: url("http://css3.zerois.net/sampleimgs/icons8-small-business-50.png");
+        }
+    </style>
+</head>
+
+<body>
+    <p>text-indent는 이렇게 들여쓰기를 위한 태그이긴 하지만 웹 표준에서는 다른 방식으로 사용할 수도 있습니다. </p>
+    <div class="box1">
+        <h2>메뉴1 </h2>
+        <ul class="menu1">
+            <li>
+                <a href="#">Menu1</a>
+            </li>
+            <li>
+                <a href="#">Menu2</a>
+            </li>
+            <li>
+                <a href="#">Menu3</a>
+            </li>
+        </ul>
+    </div>
+    <div class="box2">
+        <h2>메뉴 2</h2>
+        <ul class="menu2">
+            <li>
+                <a href="#">Menu1</a>
+            </li>
+            <li>
+                <a href="#">Menu2</a>
+            </li>
+            <li>
+                <a href="#">Menu3</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

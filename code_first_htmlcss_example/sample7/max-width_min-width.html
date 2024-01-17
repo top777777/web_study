@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>max-width와 min-width 차이점 </title>
+    <style>
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            border: 1px solid gray;
+            padding: 2em;
+            text-align: center;
+            margin: 0.5em;
+        }
+
+        .box1 {
+            width: 500px;
+            background-color: #FFF238;
+        }
+
+        .box2 {
+            max-width: 500px;
+            background-color: #38FF3B;
+        }
+
+        .box3 {
+            min-width: 500px;
+            background-color: #3895FF;
+        }
+
+        .box4 {
+            min-width: 250px;
+            max-width: 500px;
+            background-color: #DFB3FE;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">크기 고정 박스</div>
+    <div class="box2">max-width 박스</div>
+    <div class="box3">min-width 박스</div>
+    <div class="box4">max-width와 min-width 박스 혼합</div>
+</body>
+
+</html>

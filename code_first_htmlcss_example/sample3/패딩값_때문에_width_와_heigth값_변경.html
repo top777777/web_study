@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>패딩값 때문에 width와 heigth 값 변경 </title>
+    <style>
+        .box1,
+        .box2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .box1 {
+            width: 180px;
+            height: 80px;
+            padding: 10px;
+        }
+
+        .box2 {
+            width: 120px;
+            height: 20px;
+            padding: 40px;
+        }
+
+        .box1 {
+            position: relative;
+            top: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> 패딩값 때문에 width와 heigth 값 변경</h2>
+    <div class="box1">여기는 박스 1</div>
+    <div class="box2">여기는 박스 2</div>
+</body>
+
+</html>

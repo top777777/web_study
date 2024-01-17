@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>autocomplete </title>
+    <style>
+        body {
+            line-height: 2em;
+            font-family: "맑은 고딕";
+            sans-serif;
+            font-size: 0.9em;
+        }
+
+        label {
+            display: block;
+            width: 80px;
+            float: left;
+        }
+
+        form * {
+            vertical-align: middle;
+        }
+
+        button {
+            width: 150px;
+            height: 25px;
+            margin: 20px 0 0 0
+        }
+    </style>
+</head>
+
+<body>
+    <h1>autocomplete </h1>
+    <form method="post" action="demo.php" autocomplete="on">
+        <label>이름</label>
+        <input type="text" name="name" autofocus>
+        <br>
+        <label>이메일</label>
+        <input type="text" name="email" required autocomplete="off">
+        <br>
+        <button type="submit"> 확 인</button>
+    </form>
+</body>
+
+</html>

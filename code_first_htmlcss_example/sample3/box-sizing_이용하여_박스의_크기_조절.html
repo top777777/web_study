@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-sizing 이용하여 박스의 크기 조절 </title>
+    <style>
+        .box1,
+        .box2 {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            padding: 10px;
+        }
+
+        .box2 {
+            padding: 40px;
+        }
+
+        .box1 {
+            position: relative;
+            top: -30px;
+        }
+    </style>
+</head>
+<body>
+    <h2> box-sizing 이용하여 박스의 크기 조절 </h2>
+    <div class="box1">여기는 박스 1</div>
+    <div class="box2">여기는 박스 2</div>
+</body>
+
+</html>

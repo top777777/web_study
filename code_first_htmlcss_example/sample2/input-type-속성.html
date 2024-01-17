@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input 입력 속성 </title>
+    <style>
+        label {
+            padding: 8px 0;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>input 입력 속성 </h1>
+    <form action="demo.php" id="form1">
+        <label>autofocus</label>
+        <input type="text" name="name" autofocus>
+        <br>
+
+        <label>datalist</label>
+        <input list="browser" name="browser">
+        <datalist id="browser">
+            <option value="IE10">
+                <option value="IE9">
+                    <option value="IE8,7,6">
+                        <option value="크롬">
+                            <option value="오페라 ">
+                                <option value="사파리">
+        </datalist>
+        <br>
+
+        <label>min="1" max="10" </label>
+        <input type="number" name="quantity" min="1" max="10">
+        <br>
+
+        <label>multiple </label>
+        <input type="file" name="img" multiple>
+        <br>
+
+
+        <label>pattern="\d{3}[\-]\d{4}[\-]\d{4}" :</label>
+        <input type="text" name="phonenumber" pattern="\d{3}[\-]\d{4}[\-]\d{4}" placeholder="(예) 010-1234-5678" title="전화번호">
+        <br>
+
+        <label>placeholder="별명 입력"</label>
+        <input type="text" name="Nickname" placeholder="별명 입력">
+        <br>
+
+        <label>required</label>
+        <input type="text" name="email" required>
+        <br>
+        <label>step</label>
+        <input type="number" name="points" step="2">
+        <br>
+
+        <button type="submit"> 확 인</button>
+    </form>
+    <p>
+        <label>form="form1"</label>
+        <input type="text" name="url" form="form1">
+        <br>
+    </p>
+</body>
+
+</html>

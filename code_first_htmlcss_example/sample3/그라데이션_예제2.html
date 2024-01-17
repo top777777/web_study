@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>그라데이션 예제 2</title>
+    <style>
+        .box1,
+        .box2,
+        .box3 {
+            width: 500px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        .box1 {
+            background: #b8e1fc;
+            /*
+Old browsers */
+            background: -moz-linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,
+            #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%);
+            /* W3C, IE10+, FF16+, Chrome26+,
+Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd', GradientType=0);
+        }
+
+        .box2 {
+            background: #f0b7a1;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%);
+            /*
+W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1',
+            endColorstr='#bf6e4e', GradientType=0);
+            /* IE6-9 */
+        }
+
+        .box3 {
+            background: #bfd255;
+            /* Old browsers */
+            background: -moz-radial-gradient(center,
+            ellipse cover, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+            /* FF3.6-15 */
+            background: -webkit-radial-gradient(center,
+            ellipse cover, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: radial-gradient(ellipse at center, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d', GradientType=1);
+            /* IE6-9 fallback
+on horizontal gradient */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

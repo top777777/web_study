@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>overflow 와 text-overflow </title>
+    <style>
+        .box1 li,
+        .box2 li,
+        .box3 li,
+        .box4 li {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            border: 1px solid red;
+        }
+
+        .box2 li {
+            text-overflow: ellipsis;
+        }
+
+        .box3 li {
+            text-overflow: clip;
+        }
+
+        .box4 li {
+            white-space: fade;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <ul>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+        </ul>
+    </div>
+    <div class="box2">
+        <ul>
+            <li>overflow 속성을 위한 예제</li>
+            <li>overflow 설명하기 위한 예제</li>
+            <li>overflow 속성을 설명하기 위해 많은 텍스트를 입력합니다.</li>
+        </ul>
+    </div>
+    <div class="box3">
+        <ul>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+        </ul>
+    </div>
+    <div class="box4">
+        <ul>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+            <li>overflow 속성을 설명하기 위한 예제</li>
+        </ul>
+    </div>
+</body>
+
+</html>

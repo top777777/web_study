@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>함수 function </title>
+</head>
+
+<body>
+    <button onClick="callBook();">고전 소설은?</button>
+    <ul id="list"></ul>
+    <br>
+    <br> 13 X 46
+    <button onClick="multiply(13,46);"> = </button>
+    <span id="result"></span>
+    <script>
+        var text = "";
+
+        function callBook() {
+            var books = ["홍길동전", "심청전", "장화홍련전", "별주부전"];
+            for (var i = 0; i < books.length; i++) {
+                text += "<li>" + books[i] + "</li>";
+            }
+            document.getElementById("list").innerHTML = text;
+        }
+
+        function multiply(num1, num2) {
+            var total = num1 * num2;
+            var result = document.getElementById("result");
+            result.textContent = total;
+        }
+
+    </script>
+</body>
+
+</html>

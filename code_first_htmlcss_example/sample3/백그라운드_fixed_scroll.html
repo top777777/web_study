@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>백그라운드 이미지 고정 또는 스크롤 </title>
+    <style>
+        .box1,
+        .box2 {
+            height: 500px;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 3em;
+        }
+
+        .box1 {
+            background: url("images/ipad.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        .box2 {
+            background: url("images/office.jpg") no-repeat center fixed;
+            background-size: cover;
+        }
+
+        section {
+            color: white;
+            text-align: center;
+            background-color: black;
+            opacity: 0.8;
+            padding: 1.5em;
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis porta magna malesuada laoreet. Proin
+            fermentum justo a tristique euismod. Curabitur iaculis sapien id pellentesque iaculis. Quisque pharetra quam
+            vel tellus suscipit, vitae luctus justo porttitor. Nunc lobortis iaculis odio et bibendum. Nunc vestibulum aliquet
+            tempus. Suspendisse hendrerit metus eu ex mollis semper. Mauris cursus commodo ante ac vulputate. Donec vel nunc
+            at enim rutrum eleifend. Mauris hendrerit nunc vulputate auctor tincidunt. Nulla nec vehicula lorem. Morbi varius
+            orci ante. Praesent ullamcorper placerat quam ac vulputate. Praesent maximus erat vitae lacinia euismod.</section>
+    </div>
+    <div class="box2">
+        <section>Nunc vehicula non arcu sit amet maximus. In sodales dui id odio finibus, eget hendrerit nisi facilisis. Nam posuere
+            tincidunt rutrum. Aliquam non pellentesque tortor, ac suscipit eros. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. Fusce fringilla est pulvinar, imperdiet dolor id, ultricies augue. Curabitur vel neque
+            a ligula dignissim tempus. Quisque viverra metus massa, eu hendrerit dui euismod nec.</section>
+    </div>
+</body>
+
+</html>
